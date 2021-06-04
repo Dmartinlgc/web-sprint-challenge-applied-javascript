@@ -76,7 +76,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+//DJM
+Document Object Model is an interface for HTML used for JavaScript and other languages can connect and edit the page
+
 2. What is an event?
+can be any action on HTML elements by the user, clicks, mouse over, focus, drag and drop are some of these events.
+
 3. What is an event listener?
+an event listener method used to track events on the page and preform an action when the event takes place 
+
 4. Why would we convert a NodeList into an Array?
+to give ourselves access to advanced array methods to make better use of data contained in the NodeList
+
 5. What is a component?
+reusable code structures 
