@@ -1,4 +1,25 @@
-const Header = (title, date, temp) => {
+
+
+const Header = (titleText, dateText, tempText) => {
+  //declarations and class assignments
+  const header = document.createElement('div')
+  header.className = 'header'
+  const date = document.createElement('span')
+  date.className = 'date'
+  const title = document.createElement('h1')
+  const temp = document.createElement('span')
+  temp.className = 'temp'
+//value assignment
+date.textContent = dateText
+title.textContent = titleText
+temp.textContent = tempText
+//appending to DOM
+header.appendChild(date) 
+header.appendChild(title)
+header.appendChild(temp)
+
+return header
+
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
@@ -14,6 +35,10 @@ const Header = (title, date, temp) => {
 }
 
 const headerAppender = (selector) => {
+  const app = document.querySelector(selector) //appIn is pointing to location on the DOM
+  const end =Header('str1','str2','str3') //this function is constructing  div
+  app.appendChild(end)  //the  location that appIn points to: appending appEnds value of the div to the Dom 
+  console.log('HEADER APPENDED')
   // TASK 2
   // ---------------------
   // Implement this function taking a css selector as its only argument.
