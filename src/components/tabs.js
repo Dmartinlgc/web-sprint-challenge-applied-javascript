@@ -33,6 +33,7 @@ const tabsAppender = (selector) => {
   .then(response =>{
     const value = Tabs(response.data.topics)
     location.appendChild(value)
+    
   })
   .catch(error =>{
     console.log(error.message)
