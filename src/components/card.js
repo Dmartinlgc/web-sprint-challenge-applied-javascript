@@ -56,6 +56,9 @@ const cardAppender = (selector) => {
         response.data.articles[topic].forEach(item =>{
           const create = Card(item)
           place.appendChild(create)
+          create.addEventListener('click',event =>{
+            console.log(item.headline)
+          })
           })
         })
       })
